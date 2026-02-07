@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+env/
+.venv/
+backend/venv/
+
+# ML / Large files
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# OS
+.DS_Store
+
+# Logs
+*.log
