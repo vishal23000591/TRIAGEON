@@ -21,3 +21,6 @@ backend/venv/
 
 # Logs
 *.log
+**/venv/
+**/.venv/
+.DS_Store
