@@ -1,0 +1,81 @@
+.navbar {
+  background: var(--white);
+  padding: 8px 80px;              /* ⬅️ REDUCED HEIGHT */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+/* BRAND SECTION */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;                       /* ⬅️ slightly tighter */
+}
+
+/* LOGO IMAGE */
+.nav-logo-img {
+  width: 100px;                    /* SAME BIG LOGO */
+  height: 100px;
+  object-fit: contain;
+}
+
+/* LOGO TEXT */
+.nav-logo-text {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--primary-dark);
+  letter-spacing: 0.6px;
+}
+
+/* LINKS */
+.nav-links a {
+  margin-left: 32px;               /* slightly reduced */
+  font-size: 17px;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 600;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;                    /* tighter underline */
+  width: 0%;
+  height: 3px;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 24px;            /* consistent height */
+  }
+
+  .nav-logo-img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .nav-logo-text {
+    font-size: 22px;
+  }
+
+  .nav-links a {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+}
